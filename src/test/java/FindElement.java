@@ -25,10 +25,11 @@ public class FindElement {
     {
         driver.get("http://www.baidu.com");
         WebElement el=driver.findElement(By.className("mnav"));
+        System.out.println("内容为"+el.getText());
     }
-    @AfterMethod
-    public  void  quit(){
-
-        driver.quit();
-    }
+//    @AfterMethod
+//    public  void  quit(){
+//
+//        driver.quit();
+//    }
 }
