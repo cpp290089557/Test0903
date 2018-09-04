@@ -10,22 +10,27 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 public class FindElement {
 
-    WebDriver driver;
-    @BeforeMethod
-    public void setDriver()
-    {
-        //设置Chromedriver路径
-        System.setProperty("webdriver.chrome.driver","F:\\测试资料\\javaday1\\drivers\\chromedriver.exe");
-        //实例化driver
-        driver =  new ChromeDriver();
 
-    }
+//    @BeforeMethod
+//    public void setDriver()
+//    {
+//        //设置Chromedriver路径
+//        System.setProperty("webdriver.chrome.driver","F:\\测试资料\\javaday1\\drivers\\chromedriver.exe");
+//        //实例化driver
+//        driver =  new ChromeDriver();
+//
+//    }
     @Test
     public void  byClassName()
     {
+
+        /*  //设置Chromedriver路径
+        System.setProperty("webdriver.chrome.driver","F:\\测试资料\\javaday1\\drivers\\chromedriver.exe");
+        //实例化driver
+       WebDriver driver =  new ChromeDriver();
         driver.get("http://www.baidu.com");
-        WebElement el=driver.findElement(By.className("mnav"));
-        System.out.println("内容为"+el.getText());
+        WebElement el=driver.findElement(By.className("mnav"));*/
+        System.out.println("内容为测试");
     }
 //    @AfterMethod
 //    public  void  quit(){
